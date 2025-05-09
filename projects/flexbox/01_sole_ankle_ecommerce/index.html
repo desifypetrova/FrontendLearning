@@ -7,6 +7,343 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    Hello
+    <header>
+        <div class="header-top">
+            <div class="wrapper">
+                <div class="header-top-flex">
+                    <p class="align-left">Free shipping on domestic orders over $75!</p>
+                    <form>
+                        <div class="header-search">
+                            <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg></span>
+                            
+                            <input type="text" class="search-input" placeholder="Search...">  
+                        </div>
+                    </form>
+                    <a href="#">Help</a>
+                    <button aria-label="Basket" class="btn">
+                        <div class="basket-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="wrapper">
+                <div class="main-nav-flex">
+                    <div class="flex-grow-space"><a href="#" class="logo">Sole&Ankle</a></div>
+                    <ul role="list" class="main-nav-list">
+                        <li class="main-nav-list-item"><a href="#">SALE</a></li>
+                        <li class="main-nav-list-item"><a href="#">NEW RELEASES</a></li>
+                        <li class="main-nav-list-item"><a href="#">MEN</a></li>
+                        <li class="main-nav-list-item"><a href="#">WOMEN</a></li>
+                        <li class="main-nav-list-item"><a href="#">KIDS</a></li>
+                        <li class="main-nav-list-item"><a href="#">COLLECTIONS</a></li>
+                    </ul>
+                    <div class="flex-grow-space"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="wrapper padding-block-20">
+        <main>
+            <div class="main-container flex-two-columns align-baseline">
+                <div class="main-content">
+                    <div class="heading flex-two-columns padding-block-30 align-baseline">
+                        <h1 class="site-title">Running</h1>
+                        <div class="product-filter flex-two-columns align-baseline">
+                            <label for="product">Sort</label>
+                            <div class="product-select-btn-container">
+                                <select name="product" id="product">
+                                    <option value="just-released">Newest Releases</option>
+                                    <option value="sale">Sale</option>
+                                </select>
+                                <div class="select-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                      </svg>
+                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul role="list" class="product-cards-list flex-grid">
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <span class="product-card-tag" data-tag="just-released">Just Released!</span>
+                                    <div class="product-card-image">
+                                        <img src="assets/images/tech-challenge.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">NikeCourt Tech Challenge 20</span>
+                                            <span class="product-card-color">2 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price">$165</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <span class="product-card-tag" data-tag="sale">Sale</span>
+                                    <div class="product-card-image">
+                                        <img src="assets/images/joyride.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">Nike Metcon 5 AMP</span>
+                                            <span class="product-card-color">1 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price"><s>$165</s></span>
+                                            <span class="product-card-price discounted">$145</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="assets/images/lebron.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">Nike Phantom Vision</span>
+                                            <span class="product-card-color">4 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price">$165</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <span class="product-card-tag" data-tag="just-released">Just Released!</span>
+                                    <div class="product-card-image">
+                                        <img src="assets/images/legend-academy.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">NikeCourt Tech Challenge 20</span>
+                                            <span class="product-card-color">2 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price">$165</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="assets/images/metcon-5.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">NikeCourt Tech Challenge 20</span>
+                                            <span class="product-card-color">2 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price">$165</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <span class="product-card-tag" data-tag="just-released">Just Released!</span>
+                                    <div class="product-card-image">
+                                        <img src="assets/images/pegasus.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">NikeCourt Tech Challenge 20</span>
+                                            <span class="product-card-color">2 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price">$165</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <span class="product-card-tag" data-tag="sale">Sale</span>
+                                    <div class="product-card-image">
+                                        <img src="assets/images/phantom-flyknit.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">NikeCourt Tech Challenge 20</span>
+                                            <span class="product-card-color">2 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price"><s>$200</s></span>
+                                            <span class="product-card-price discounted">$165</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <span class="product-card-tag" data-tag="just-released">Just Released!</span>
+                                    <div class="product-card-image">
+                                        <img src="assets/images/phantom.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">NikeCourt Tech Challenge 20</span>
+                                            <span class="product-card-color">2 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price">$165</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <span class="product-card-tag" data-tag="sale">Sale</span>
+                                    <div class="product-card-image">
+                                        <img src="assets/images/react-infinity.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">NikeCourt Tech Challenge 20</span>
+                                            <span class="product-card-color">2 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price"><s>$120</s></span>
+                                            <span class="product-card-price discounted">$80</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="assets/images/react-vision.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">NikeCourt Tech Challenge 20</span>
+                                            <span class="product-card-color">2 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price">$165</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="assets/images/stefan-janoski.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">NikeCourt Tech Challenge 20</span>
+                                            <span class="product-card-color">2 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price">$165</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product-card-item">
+                            <a href="#">
+                                <div class="product-card">
+                                    <span class="product-card-tag" data-tag="just-released">Just Released!</span>
+                                    <div class="product-card-image">
+                                        <img src="assets/images/pegasus.jpg" alt="">
+                                    </div>
+                                    <div class="product-card-details flex-two-columns">
+                                        <div class="flex-two-columns">
+                                            <span class="product-card-title">NikeCourt Tech Challenge 20</span>
+                                            <span class="product-card-color">2 Colors</span>
+                                        </div>
+                                        <div class="product-card-price-container flex-two-columns">
+                                            <span class="product-card-price">$165</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar">
+                    <nav class="breadcrumbs-nav padding-block-30" aria-label="breadcrumbs" >
+                        <ol role="list" class="breadcrumbs-list">
+                            <li class="breadcrumbs-item">
+                                <a href="">Home</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" strokbreadcrumbs-liste-linejoin="round" d="m9 20.247 6-16.5" />
+                                </svg>
+                            </li>
+                            <li class="breadcrumbs-item">
+                                <a href="">Sale</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m9 20.247 6-16.5" />
+                                </svg>
+                            </li>
+                            <li class="breadcrumbs-item">
+                                <a href="">Shoes</a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <aside>
+                        <ul role="list" class="categories-list">
+                            <li class="categories-item"><a href="#">Lifestyle</a></li>
+                            <li class="categories-item"><a href="#">Jordan</a></li>
+                            <li class="categories-item"><a href="#">Running</a></li>
+                            <li class="categories-item"><a href="#">Basketball</a></li>
+                            <li class="categories-item"><a href="#">Training & Gym</a></li>
+                            <li class="categories-item"><a href="#">Football</a></li>
+                            <li class="categories-item"><a href="#">Skateboarding</a></li>
+                            <li class="categories-item"><a href="#">American Football</a></li>
+                            <li class="categories-item"><a href="#">Baseball</a></li>
+                            <li class="categories-item"><a href="#">Golf</a></li>
+                            <li class="categories-item"><a href="#">Tennis</a></li>
+                            <li class="categories-item"><a href="#">Athletics</a></li>
+                            <li class="categories-item"><a href="#">Walking</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>  
+        </main>
+    </div>
 </body>
 </html>
