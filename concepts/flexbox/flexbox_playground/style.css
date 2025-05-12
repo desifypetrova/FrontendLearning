@@ -22,6 +22,9 @@
     background-color: var(--bg-color-container);
 }
 
+.flex-two-columns {
+    display: flex;
+}
 .flex-container {
     display: inline-flex;
     gap: 20px;
