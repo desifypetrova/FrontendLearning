@@ -1,0 +1,405 @@
+@layer reset, font, base, layout, component, utility;
+
+@layer reset {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ul[role='list'] {
+    list-style: none;
+  }
+
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    min-height: 100;
+  }
+
+  body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.6;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+}
+
+@layer font {
+  @font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../assets/fonts/opensans-regular-webfont.woff2") format("woff2");
+    src: url("../assets/fonts/opensans-regular-webfont.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../assets/fonts/opensans-semibold-webfont.woff2") format("woff2");
+    src: url("../assets/fonts/opensans-semibold-webfont.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../assets/fonts/opensans-bold-webfont.woff2") format("woff2");
+    src: url("../assets/fonts/opensans-bold-webfont.woff") format("woff");
+  }
+}
+
+
+@layer base {
+  :root {
+    --highlight-color: #fcf5e9;
+    --dark-color: #333;
+    --container-normal: 1100px;
+    --container-wide: 1300px;
+    --container-narrow: 900px;
+
+    --fs-13: 0.8125rem;
+    --fs-14: 0.875rem;
+    --fs-15: 0.9375rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
+    --fs-26: 1.625rem;
+    --fs-28: 1.75rem;
+    --fs-30: 1.875rem;
+    --fs-36: 2.25rem;
+    --fs-48: 3rem;
+    --fs-60: 3.75rem;
+    --fs-80: 5rem;
+    --fs-120: 7.5rem;
+
+    --fs-normal: var(--fs-16);
+    --fs-xl: var(--fs-48);
+    --fs-l: var(--fs-24);
+
+    @media(max-width: 880px) {
+      /* background-color: red; */
+      --fs-xl: var(--fs-36);
+    }
+
+    @media(max-width: 670px) {
+      /* background-color: red; */
+      --fs-xl: var(--fs-28);
+    }
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff;
+    color: var(--dark-color);
+  }
+}
+
+@layer layout {
+  .wrapper {
+    --wrapper-max-width: 1100px;
+    width: min(var(--wrapper-max-width), 100% - 2*24px);
+    margin-inline: auto;
+
+    &[data-width="wide"] {
+      --wrapper-max-width: 1400px;
+    }
+
+    &[data-width="narrow"] {
+      --wrapper-max-width: 900px;
+    }
+  }
+
+  .gallery-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /*footer*/
+  .flex-even-cols {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+
+    @media(max-width: 840px) {
+      flex-direction: column;
+    }
+  }
+}
+
+@layer component {
+  .logo {
+    display: block;
+    width: 130px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--dark-color);
+  }
+
+  /*header*/
+  .main-nav {
+    display: flex;
+    gap: 20px;
+
+    justify-content: space-between;
+    align-items: center;
+
+
+    @media(max-width: 620px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .main-nav-list {
+    display: flex;
+    gap: 30px;
+    & a {
+      display: block;
+      padding: 8px 16px;
+      
+    }
+    & a:hover {
+      background-color: var(--highlight-color);
+    }
+    & .active{
+      background-color: var(--highlight-color);
+      font-weight: 600;
+    }
+  }
+
+  /*hero section*/
+
+  .hero {
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width: 880px) {
+      height: 25rem;
+    }
+
+    @media(max-width: 670px) {
+      height: 20rem;
+    }
+  }
+
+  .hero-title {
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+
+    & .highlight {
+      background-color: var(--highlight-color);
+    }
+  }
+
+  /*gallery*/
+
+  .gallery-flex-item {
+    flex: 0 1 calc(100%/3 - 20px);
+    border-radius: 20px;
+
+    & img {
+      border-radius: 20px;
+    }
+
+    @media(max-width: 900px) {
+      flex-basis: calc(100% / 2 - 20px);
+    }
+
+    @media(max-width: 460px) {
+      flex-basis: 300px;
+    }
+
+  }
+
+  /*about page*/
+  .section-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+
+    & .highlight {
+      color: var(--dark-color)
+    }
+  }
+
+  .section-dark-cards {
+    text-align: left;
+  }
+
+  .section-light-card {
+    border-radius: 10px;
+    max-width: fit-content;
+
+    & img {
+      border-radius: 10px;
+    }
+  }
+
+  /*contact page*/
+  .contact-form {
+    /* border: 1px solid red; */
+    & input{
+      border: none;
+      border-bottom: 1px solid #333;
+      width: 100%;
+      padding-block: 16px;
+    }
+
+    & textarea {
+      border: none;
+      height: 200px;
+      border-bottom: 1px solid #333;
+      width: 100%;
+    }
+
+    & .btn {
+      background-color: transparent;
+      display: block;
+      width: 100%;
+      padding: 16px 20px;
+      border: 1px solid #333;
+
+      &:hover {
+        background-color: var(--dark-color);
+        color: #fff;
+      }
+    }
+
+  }
+
+  /*footer*/
+  .footer {
+    border-top: 1px solid #aaa;
+  }
+
+  .social-icons-list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+
+    i {
+      font-size: 2em;
+    }
+  }
+}
+
+@layer utilities {
+
+  .fs-l {
+    font-size: var(--fs-l);
+  }
+
+  .fs-normal {
+    font-size: var(--fs-normal);
+  }
+
+  .fs-xl {
+    font-size: var(--fs-xl);
+  }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .margin-bottom-8 {
+    margin-bottom: 8px;
+  }
+
+  .margin-bottom-12 {
+    margin-bottom: 12px;
+  }
+
+  .margin-bottom-32 {
+    margin-bottom: 32px;
+  }
+
+  .margin-bottom-40 {
+    margin-bottom: 40px;
+  }
+
+  .padding-block-20 {
+    padding-block: 20px;
+  }
+
+  .padding-block-30 {
+    padding-block: 30px;
+  }
+
+  .padding-block-40 {
+    padding-block: 40px;
+  }
+
+  .padding-block-50 {
+    padding-block: 50px;
+  }
+
+  .padding-block-60 {
+    padding-block: 60px;
+  }
+
+  .padding-block-80 {
+    padding-block: 80px;
+  }
+
+  .align-text-center {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+/* Utility Classes */
