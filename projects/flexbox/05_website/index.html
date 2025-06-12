@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trillo Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="bg-light">
+            <div class="wrapper">
+                <div class="top-nav__container flex-pair flex-align-center">
+                    <a href="#" class="logo">
+                        <img src="assets/images/logo.png" alt="trillo logo">
+                    </a>
+
+                    <form action="#" class="search-container">
+                        <div class="flex-pair">
+                            <input type="text" class="search__input" placeholder="Search hotels">
+                            <button class="search__button">
+                                <svg class="search__icon">
+                                    <use href="./assets/images/sprite.svg#icon-magnifying-glass"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+
+                    <nav class="user-container flex-pair">
+                        <button class="user__item">
+                            <svg>
+                                <use href="./assets/images/sprite.svg#icon-bookmark"></use>
+                            </svg>
+                            <span class="notification">7</span>
+                        </button>
+                        <button class="user__item">
+                            <svg>
+                                <use href="./assets/images/sprite.svg#icon-chat"></use>
+                            </svg>
+                            <span class="notification">13</span>
+                        </button>
+                        <button class="user__item user__profile flex-pair">
+                            <img src="./assets/images/user.jpg" alt="user photo" class="user-image">
+                            <span class="user-name">John</span>
+                        </button>
+                    </nav>
+                </div> <!--top-nav__container -->
+            </div><!--wrapper-->
+        </div>
+
+        <!--main-nav-->
+        <nav class="bg-dark">
+            <div class="wrapper">
+                <ul role="list" class="main-nav-list flex-pair">
+                    <li class="main-nav-item">
+                        <a href="#" class="main-nav-item__link main-nav-item__link--active flex-pair flex-align-center">
+                            <svg>
+                                <use href="assets/images/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="#" class="main-nav-item__link flex-pair flex-align-center">
+                            <svg>
+                                <use href="assets/images/sprite.svg#icon-aircraft-take-off"></use>
+                            </svg>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="#" class="main-nav-item__link flex-pair flex-align-center">
+                            <svg>
+                                <use href="assets/images/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>Car Rental</span>
+                        </a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="#" class="main-nav-item__link flex-pair flex-align-center">
+                            <svg>
+                                <use href="assets/images/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Tours</span>
+                        </a>
+                    </li>
+                </ul>
+            </div><!--wrapper-->
+        </nav>
+
+    </header>
+    <main>
+
+        <section>
+            <div class="wrapper">
+                <div class="image-gallery flex-pair">
+                    <div><img src="assets/images/hotel-1.jpg" alt="The hotel pool glowing under the evening lights.">
+                    </div>
+                    <div><img src="assets/images/hotel-2.jpg" alt="The hotel pool in daylight."></div>
+                    <div><img src="assets/images/hotel-3.jpg" alt="The view of the sea from wide terraces."></div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light">
+            <div class="wrapper">
+                <div class="hero-section flex-pair flex-align-center">
+                    <h1 class="main-title">Hotel Las Palmas</h1>
+
+                    <div class="stars flex-pair">
+                        <svg>
+                            <use href="assets/images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg>
+                            <use href="assets/images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg>
+                            <use href="assets/images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg>
+                            <use href="assets/images/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg>
+                            <use href="assets/images/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+
+                    <div class="location">
+                        <a href="https://maps.google.com/?q=Albufeira+Portugal" class="flex-pair">
+                            <svg>
+                                <use href="assets/images/sprite.svg#icon-location-pin"></use>
+                            </svg><span class="location__text">Albufeira, Portugal</span>
+                        </a>
+                    </div>
+                    <div class="ratings">
+                        <p class="ratings-averige">8.6</p>
+                        <p class="ratings-total">429 Votes</p>
+                    </div>
+                </div>
+            </div><!--wrapper-->
+        </section>
+        <section class="margin-top-35">
+            <div class="wrapper">
+                <div class="content-section flex-pair">
+                    <div class="description bg-light padding-inline-40 padding-block-40">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis
+                            ratione
+                            sapiente
+                            saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto
+                            voluptate.
+                        </p>
+                        <p class="padding-block-30">Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                            architecto voluptate
+                            delectus,
+                            inventore
+                            iure aliquid aliquam.</p>
+                        <ul role="list" class="description__list padding-block-40">
+                            <li class="description__item flex-pair flex-align-center">Close to the beach</li>
+                            <li class="description__item flex-pair flex-align-center">Free airport shuttle</li>
+                            <li class="description__item flex-pair flex-align-center">Air conditioning and heating</li>
+                            <li class="description__item flex-pair flex-align-center">We speak all languages</li>
+                            <li class="description__item flex-pair flex-align-center">Breakfast included</li>
+                            <li class="description__item flex-pair flex-align-center">Free wifi in all rooms</li>
+                            <li class="description__item flex-pair flex-align-center">Pets allowed</li>
+                            <li class="description__item flex-pair flex-align-center">Perfect for families</li>
+                        </ul>
+                        <div class="flex-group margin-top-35 flex-align-center">
+                            <p>Lucy and 3 other friends recommend this hotel.</p>
+                            <div class="description-images flex-pair">
+                                <div class="description-image"><img src="assets/images/user-3.jpg" alt=""></div>
+                                <div class="description-image"><img src="assets/images/user-4.jpg" alt=""></div>
+                                <div class="description-image"><img src="assets/images/user-5.jpg" alt=""></div>
+                                <div class="description-image"><img src="assets/images/user-6.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials">
+                        <figure>
+                            <div class="testimonial__container bg-light">
+                                <blockquote class="testimonial__quote">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque
+                                    architecto
+                                    dicta
+                                    animi,
+                                    totam, itaque officia ex.
+                                </blockquote>
+                                <figcaption>
+                                    <div class="testimonial__author flex-pair flex-align-center">
+                                        <img src="assets/images/user-1.jpg" alt="">
+                                        <div class="author__data">
+                                            <p class="author__name">Nick Smith</p>
+                                            <p>Feb 23rd, 2017</p>
+                                        </div>
+                                        <div class="author__rating">7.8</div>
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                        <figure>
+                            <div class="testimonial__container bg-light">
+                                <blockquote class="testimonial__quote">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque
+                                    architecto
+                                    dicta
+                                    animi,
+                                    totam, itaque officia ex.
+                                </blockquote>
+                                <figcaption>
+                                    <div class="testimonial__author flex-pair flex-align-center">
+                                        <img src="assets/images/user-1.jpg" alt="">
+                                        <div class="author__data">
+                                            <p class="author__name">Nick Smith</p>
+                                            <p>Feb 23rd, 2017</p>
+                                        </div>
+                                        <div class="author__rating">7.8</div>
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                        <a href="#" class="testimonials__link flex-pair">Show all <span>→</span></a>
+                    </div>
+                </div>
+            </div><!--wrapper-->
+        </section>
+        <section class="margin-top-35">
+            <div class="wrapper">
+                <div class="cta-section bg-light padding-block-60">
+                    <p>Good news! We have 4 free rooms for your selected dates!</p>
+                    <button class="btn">Book now</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
